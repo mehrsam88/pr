@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>game awards</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/stylehome.css" />
+    <link rel="import" typlehref="component.html" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/img/the-game-awards (3).ico"
+    />
+
+    <!-- Add Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar from previous code -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #8dd19b"
+    >
+      <a class="navbar-brand" href="code019.html">Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="code017.html">the news</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="displayButton" href="#">About</a>
+          </li>
+        </ul>
+        <!-- Add Search Form -->
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            type="submit"
+            style="border-color: #8dd19b; color: #8dd19b"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <iframe id="myFrame" src="code018.html"></iframe>
+    <!--main part-->
+    <div class="container">
+      <h1>Game Awards 2023: Baldur's Gate 3 Wins Big</h1>
+
+      <p>
+        Larian Studios' Baldur's Gate 3 had a triumphant showing at the Game
+        Awards 2023, taking home the coveted Game of the Year award. The
+        isometric role-playing game was praised for its innovative gameplay,
+        immersive storytelling, and vast world.
+      </p>
+      <div>
+        <img src="../assets/img/share-page2.jpg" alt="Baldur's Gate 3" />
+      </div>
+      <p>
+        Baldur's Gate 3 is a follow-up to the classic Baldur's Gate series and
+        takes players on an epic journey to the Underdark, a mysterious
+        subterranean realm. The game features a rich character creation system,
+        a deep and tactical combat system, and a captivating story that will
+        keep players hooked for hours on end.
+      </p>
+      <p>
+        The game's intricate character creation system allows players to
+        customize their heroes in countless ways, from their appearance and
+        class to their alignment and personality. This level of customization
+        makes each playthrough feel unique and engaging. The game's combat
+        system is equally impressive, combining real-time action with tactical
+        elements. Players must carefully choose their actions and strategize
+        their attacks to overcome challenging foes. The game's cooperative
+        multiplayer mode adds an extra layer of depth and replayability.
+      </p>
+      <p>
+        Congratulations to Larian Studios for their well-deserved win! Baldur's
+        Gate 3 is a true masterpiece of video game design and is sure to be a
+        landmark in the genre.
+      </p>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2023 #### company</p>
+    </footer>
+    <script>
+      document.getElementById("displayButton").onclick = function () {
+        document.getElementById("myFrame").style.display = "inline";
+        document.getElementById("myFrame").style.backgroundColor = "#85E098";
+        var container = document.getElementsByClassName("container");
+        var jomborton = document.getElementById("jomborton");
+        for (var i = 0; i < container.length; i++) {
+          container[i].style.display = "none";
+        }
+        jomborton.style.display = "none";
+      };
+    </script>
+    <!-- Add Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #8dd19b;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+section {
+    padding: 40px 0;
+}
+
+footer {
+    background-color: #8dd19b;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.jumbotron {
+    background: url('../img/download\ \(3\).jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.feature {
+    margin-top: 20px;
+}
+.container h1 {
+    margin-top: 50px;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>game awards</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/stylehome.css">
+    <link rel="import" typlehref="component.html" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/img/the-game-awards (3).ico"
+    />
+
+    <!-- Add Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar from previous code -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #8dd19b"
+    >
+      <a class="navbar-brand" href="code019.html">Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="code017.html">the news</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="displayButton" href="#">About</a>
+          </li>
+        </ul>
+        <!-- Add Search Form -->
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            type="submit"
+            style="border-color: #8dd19b; color: #8dd19b"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <iframe id="myFrame"  src="code018.html"></iframe>
+    <!-- Jumbotron -->
+    <div class="jumbotron" >
+        <h1 class="display-4">The Game Awards 2023</h1>
+        <p class="lead">Celebrating Excellence in Video Games</p>
+    </div>
+
+    <!-- Features Section -->
+    <section class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card feature">
+                    <img src="../assets/img/download.jpg" class="card-img-top" alt="Feature 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Exciting Nominees</h5>
+                        <p class="card-text">Discover the top contenders for this year's prestigious awards.</p>
+                        <a href="#" class="btn btn-primary">Read-more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature">
+                    <img src="../assets/img/live atream.jpg" class="card-img-top" alt="Feature 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Live Event</h5>
+                        <p class="card-text">Watch the live broadcast of The Game Awards ceremony.</p>
+                        <a href="https://www.youtube.com/watch?v=Zu2z5M4gmno" class="btn btn-primary">Read-more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature">
+                    <img src="../assets/img/buldars gate 3.jpg" class="card-img-top" alt="Feature 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Winners Announcement</h5>
+                        <p class="card-text">Stay tuned for the exciting announcement of this year's winners.</p>
+                        <a href="code020.html" class="btn btn-primary">Read-more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bootstrap JS -->
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2023 #### company</p>
+    </footer>
+    <script>
+      document.getElementById("displayButton").onclick = function () {
+        document.getElementById("myFrame").style.display = "inline";
+        document.getElementById("myFrame").style.backgroundColor = "#85E098";
+        var container = document.getElementsByClassName("container");
+        var jomborton = document.getElementById("jomborton");
+        for (var i = 0; i < container.length; i++) {
+          container[i].style.display = "none";
+        }
+        jomborton.style.display = "none";
+      };
+    </script>
+    <!-- Add Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    
+
+  </body>
+</html>

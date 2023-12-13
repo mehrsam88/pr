@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>game awards</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="import" typlehref="component.html" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/img/the-game-awards (3).ico"
+    />
+
+    <!-- Add Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar from previous code -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #8dd19b"
+    >
+      <a class="navbar-brand" href="code019.html">Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="code017.html">the news</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="displayButton" href="#">About</a>
+          </li>
+        </ul>
+        <!-- Add Search Form -->
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            type="submit"
+            style="border-color: #8dd19b; color: #8dd19b"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <iframe id="myFrame" itemid="iframe-1" src="code018.html"></iframe>
+    <!-- Photo Gallery Section -->
+    <div  class="container mt-4">
+      <div class="row">
+        <!-- Starting Paragraph with "Read More" -->
+        <div class="col-lg-12" id="startpart">
+          <div class="container">
+            <h1>the game awards 2023</h1>
+            <p>
+              The Game Awards 2023, held on December 7, 2023, was a night of
+              celebration and recognition for the best video games of the year.
+              The event was hosted by Geoff Keighley at the Microsoft Theater in
+              Los Angeles, California, and featured a star-studded lineup of
+              celebrities, musical performances, and world premieres. Game of
+              the Year Baldur's Gate 3 took home the coveted Game of the Year
+              award, cementing its position as one of the most critically
+              acclaimed and commercially successful games of the year. The
+              isometric role-playing game from Larian Studios has been praised
+              for its innovative gameplay, immersive storytelling, and vast
+              world.
+              <a href="#" class="read-more">Read More</a>
+            </p>
+            <div class="container img">
+              <img
+                src="../assets/img/share.png"
+                class="img-fluid rounded"
+                alt="Starting Photo"
+              />
+              <p>lets get started:</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- First Photo and Paragraph -->
+        <div class="col-lg-6 container">
+          <img
+            src="../assets/img/alan-wake-2-reviews--gameplay-653783636367b67874554-1200.png"
+            class="img-fluid rounded"
+            alt="First Photo"
+          />
+          <h2>Alan Wake II: A Haunting Return</h2>
+          <p>
+            After a decade of anticipation, Alan Wake 2 has finally arrived,
+            delivering a chilling sequel that plunges players back into the
+            darkness of Bright Falls. Remedy Entertainment has crafted a
+            masterpiece of psychological horror, weaving together a captivating
+            narrative, haunting atmosphere, and chilling sound design.
+          </p>
+        </div>
+        <!-- Second Photo and Paragraph -->
+        <div class="col-lg-6 container">
+          <img
+            src="../assets/img/buldars gate 3.jpg"
+            class="img-fluid rounded"
+            alt="Second Photo"
+          />
+          <h2>Baldur's Gate 3:A Grand Continuation</h2>
+          <p>
+            Larian Studios' Baldur's Gate 3 has been shaping up to be one of the
+            most ambitious and exciting RPGs in recent years, and the Game
+            Awards 2023 further cemented its position as a game-changer. The
+            game took home the coveted Game of the Year award, as well as Best
+            Role-Playing Game.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2023 #### company</p>
+    </footer>
+    <script>
+      document.getElementById("displayButton").onclick = function () {
+          document.getElementById("myFrame").style.display = "inline";
+          document.getElementById("myFrame").style.backgroundColor = "#85E098";
+          var body = document.getElementsByClassName("container");
+          for (var i = 0; i < body.length; i++) {
+            body[i].style.display = "none";
+          }
+        };
+    </script>
+    <!-- Add Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
